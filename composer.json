@@ -1,0 +1,33 @@
+{
+  "name": "greenfriends/simplenewsfetcher",
+  "license": "proprietary",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "git",
+      "url" : "https://bitbucket.org/dj_avolak/skeletor"
+    }
+  ],
+  "require": {
+    "guzzlehttp/psr7": "*",
+    "guzzlehttp/guzzle": "*",
+    "nesbot/carbon": "^2.32",
+    "smalot/pdfparser": "*",
+    "phpoffice/phpspreadsheet": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "phpmd/phpmd": "*",
+    "roave/security-advisories": "dev-master",
+    "rregeer/phpunit-coverage-check": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Solidarity\\": "packages/Solidarity/src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "bin-dir": "vendor/bin/"
+  }
+}
