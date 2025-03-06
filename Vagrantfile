@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "bento/ubuntu-20.04"
   config.vm.synced_folder "./", "/vagrant", :owner => "vagrant", :group => "www-data"
-  config.vm.network "private_network", ip: "192.168.25.9"
+  config.vm.network "private_network", ip: "192.168.25.42"
   config.vm.provision :shell, path: "bootstrap.sh"
 
   # Provider-specific configuration so you can fine-tune various
